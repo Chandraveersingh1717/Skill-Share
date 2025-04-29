@@ -1,0 +1,312 @@
+/* Dashboard.css */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #f3f4f6, #dbeafe);
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .dashboard-container {
+    padding: 2rem;
+    transition: background 0.3s ease;
+  }
+  
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .dashboard-title {
+    font-size: 2.5rem;
+    color: #1e3a8a;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  
+  .toggle-darkmode-btn {
+    background: #6366f1;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(99, 102, 241, 0.4);
+    cursor: pointer;
+  }
+  
+  .toggle-darkmode-btn {
+    background: #4b5563;
+  }
+  
+  
+  .toggle-darkmode-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  .dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+  }
+  
+  .sidebar-card {
+    background: white;
+    border-radius: 20px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transform: perspective(1000px) rotateY(-2deg);
+    transition: transform 0.4s ease, background 0.3s ease;
+  }
+  
+  .sidebar-card:hover {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  
+  .profile-details {
+    margin-top: 1rem;
+  }
+  
+  .edit-profile-btn {
+    margin-top: 1rem;
+    background: #e0e7ff;
+    color: #1e3a8a;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: background 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .edit-profile-btn:hover {
+    background: #c7d2fe;
+  }
+  
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .skills-section h2 {
+    font-size: 1.8rem;
+    color: #1e3a8a;
+    margin-bottom: 1rem;
+  }
+  
+  .skill-search {
+    width: 100%;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    margin-bottom: 1.5rem;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+  
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .skill-card {
+    padding: 16px;
+    border-radius: 10px;
+    width: 220px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-3px);
+  }
+  
+  .university {
+    font-size: 13px;
+    color: #666;
+  }
+  
+  .rating-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+  }
+  
+  .stars {
+    color: #f4c542;
+  }
+  
+  .status {
+    font-size: 12px;
+    padding: 4px 6px;
+    border-radius: 8px;
+  }
+  
+  .status.ended {
+    color: #d9534f;
+  }
+  
+  .status.upcoming {
+    color: #f0ad4e;
+  }
+  
+  .status.completed {
+    color: #5cb85c;
+  }
+  
+  .learn-more-btn {
+    margin-top: 0.5rem;
+    background: #6366f1;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .learn-more-btn:hover {
+    background: #4f46e5;
+  }
+  
+  .mentor-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s ease;
+    transform: scale(1);
+  }
+  
+  .mentor-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .join-mentor-btn {
+    background: #10b981;
+    color: white;
+    padding: 0.75rem 1.25rem;
+    border-radius: 12px;
+    border: none;
+    font-weight: bold;
+    transition: background 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .join-mentor-btn:hover {
+    background: #059669;
+  }
+  
+  /* Token counter animation */
+  .token-counter {
+    display: inline-block;
+    font-weight: bold;
+    animation: pulse 1.5s infinite;
+    color: #10b981;
+  }
+  
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.1); opacity: 0.8; }
+  }
+  
+  /* Dark mode */
+  .dark-mode {
+    background: #1f2937;
+    color: #f9fafb;
+  }
+  
+  .dark-mode .dashboard-title,
+  .dark-mode .skills-section h2 {
+    color: #93c5fd;
+  }
+  
+  .dark-mode .sidebar-card,
+  .dark-mode .skill-card,
+  .dark-mode .mentor-card {
+    background: #374151;
+    color: #f3f4f6;
+  }
+  
+  .dark-mode .skill-search {
+    background: #4b5563;
+    border: 1px solid #6b7280;
+    color: white;
+  }
+  
+  .dark-mode .edit-profile-btn {
+    background: #6d28d9;
+    color: white;
+  }
+  
+  .dark-mode .edit-profile-btn:hover {
+    background: #5b21b6;
+  }
+  @media (max-width: 768px) {
+    .dashboard-grid {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .header-actions {
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+  
+    .skills-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .mentor-card {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+  }
+  .search-bar{
+    height: 30px;
+    width: 700px;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+  .help-btn{
+    /* margin-left: 1350px;
+    margin-top: 10px; */
+    background: #6366f1;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(99, 102, 241, 0.4);
+    cursor: pointer;
+}
+.help-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  }
+  .logo{
+height: 100px;
+width: 100px;
+  }

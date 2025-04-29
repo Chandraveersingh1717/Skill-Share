@@ -1,0 +1,107 @@
+/* src/components/InstallApp.css */
+
+.install-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px;
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    gap: 30px;
+    margin: 40px auto;
+    max-width: 1200px;
+  }
+  
+  .text-section {
+    flex: 1 1 350px;
+    max-width: 500px;
+  }
+  
+  .text-section h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .text-section .brand-name {
+    color:grey;
+    font-weight: bold;
+  }
+  
+  .text-section p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .store-buttons img {
+    width: 140px;
+    margin-right: 15px;
+    transition: transform 0.2s ease;
+  }
+  
+  .store-buttons img:hover {
+    transform: scale(1.05);
+  }
+  
+  .qr-code {
+    flex: 1 1 150px;
+    text-align: center;
+  }
+  
+  .qr-code img {
+    width: 120px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    filter: blur(4px);
+    transition: filter 0.3s ease;
+  }
+  
+  .qr-code:hover img {
+    filter: blur(0);
+  }
+  
+  .qr-hint {
+    font-size: 12px;
+    margin-top: 8px;
+    color: #999;
+  }
+  
+  .app-image {
+    flex: 1 1 200px;
+    text-align: center;
+  }
+  
+  .app-image img {
+    width: 180px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease;
+  }
+  
+  .app-image img:hover {
+    transform: translateY(-5px);
+  }
+  .app-store-btn,.play-store-btn{
+    background: #6366f1;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(99, 102, 241, 0.4);
+    cursor: pointer;
+margin-left: 15px;
+  }
+  
+  .play-store-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  }
+  .app-store-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  }

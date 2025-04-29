@@ -1,0 +1,53 @@
+.create-profile-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 2rem;
+    background: #f9f9f9;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .create-profile-container h2 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .profile-form label {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .profile-form input,
+  .profile-form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 0.3rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .profile-form button {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .profile-form button:hover {
+    background-color: #45a049;
+  }
+  
+  .tx-message {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: green;
+    text-align: center;
+  }
+  
